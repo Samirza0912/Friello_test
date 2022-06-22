@@ -12,6 +12,7 @@ namespace Friello.DAL
         }
 
         public DbSet<Slider> Sliders { get; set; }
-        public DbSet<SliderContent> SliderContents {get; set;}
+        public DbSet<SliderContent> SliderContents { get; set; }
+        public DbSet<Products> Products { get; set; }
     }
 }

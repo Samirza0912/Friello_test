@@ -41,13 +41,13 @@ namespace Friello
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
             app.UseStaticFiles();
+            app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     "default",
-                    "{controller=home}/{action=index}"
+                    "{controller=home}/{action=index}/{id?}"
                     );
             });
         }
